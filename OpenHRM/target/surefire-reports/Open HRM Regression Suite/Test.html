@@ -1,0 +1,396 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 26 21:35:08 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>41 seconds (41684 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>HighPriority MediumPriority LowPriority </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#1_AllFieldsBlank, , , Username cannot be empty, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#2_UserNameBlank, , DUMMY_PASS, Username cannot be empty, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#3_PasswordBlank, DUMMY_USERNAME, , Password cannot be empty, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#4_InvalidCredentials, DUMMY_USERNAME, DUMMY_PASS, Invalid credentials, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>1</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#5_AdditionalInvalidCredentials, NISHAD, Invalid, Invalid credentials, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#6_AdditionalInvalidCredentials, Prajakta, Invalid, Invalid credentials, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>1</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#7_AdditionalInvalidCredentials, Arun, Invalid, Invalid credentials, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#8_AdditionalInvalidCredentials, Neha, Invalid, Invalid credentials, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>1</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#9_AdditionalInvalidCredentials, Malhar, Invalid, Invalid credentials, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#10_AdditionalInvalidCredentials, Ira, Invalid, Invalid credentials, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>1</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#11_AdditionalBlanks,  ,  , Invalid credentials, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>1</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#12_AdditionalBlanks,   ,  , Invalid credentials, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#13_AdditionalBlanks,  ,   , Invalid credentials, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#14_AdditionalBlanks,    ,   , Invalid credentials, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.InvalidLoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: RegressionTest.InvalidLoginTest<br>Parameters: TC#15_AdditionalBlanks,   ,     , Invalid credentials, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.InvalidLoginTest@341b80b2</td></tr>
+<tr>
+<td title='RegressionTest.LinkValidation.login()'><b>login</b><br>Test class: RegressionTest.LinkValidation<br>Parameters: https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login, opensourcecms, opensourcecms, org.testng.TestRunner@11df6cc9</td>
+<td></td>
+<td>6</td>
+<td>RegressionTest.LinkValidation@4de5031f</td></tr>
+<tr>
+<td title='RegressionTest.LinkValidation.menuValidation()'><b>menuValidation</b><br>Test class: RegressionTest.LinkValidation<br>Parameters: Admin, Admin.Organization
+Admin.Job
+Admin.Qualification
+Admin.Memberships
+Admin.Nationalities
+Admin.Users
+Admin.EmailNotifications
+Admin.ProjectInfo, org.testng.TestRunner@11df6cc9<br/>
+<a href="#Output-1692795234" onClick='toggleBox("Output-1692795234", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1692795234" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1692795234">
+Links to Hover:<br/>
+Admin<br/>
+Links to validate:<br/>
+Admin.Organization
+Admin.Job
+Admin.Qualification
+Admin.Memberships
+Admin.Nationalities
+Admin.Users
+Admin.EmailNotifications
+Admin.ProjectInfo<br/>
+Checking if all links are invisible<br/>
+.........COMPLETED<br/>
+Checking if all links are Visible<br/>
+.........COMPLETED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.LinkValidation@4de5031f</td></tr>
+<tr>
+<td title='RegressionTest.LinkValidation.menuValidation()'><b>menuValidation</b><br>Test class: RegressionTest.LinkValidation<br>Parameters: Admin
+Admin.Organization, Admin.Organization.GeneralInformation
+Admin.Organization.Locations
+Admin.Organization.Structure, org.testng.TestRunner@11df6cc9<br/>
+<a href="#Output-1959670607" onClick='toggleBox("Output-1959670607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1959670607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1959670607">
+Links to Hover:<br/>
+Admin
+Admin.Organization<br/>
+Links to validate:<br/>
+Admin.Organization.GeneralInformation
+Admin.Organization.Locations
+Admin.Organization.Structure<br/>
+Checking if all links are invisible<br/>
+.........COMPLETED<br/>
+Checking if all links are Visible<br/>
+.........COMPLETED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.LinkValidation@4de5031f</td></tr>
+<tr>
+<td title='RegressionTest.LinkValidation.menuValidation()'><b>menuValidation</b><br>Test class: RegressionTest.LinkValidation<br>Parameters: Admin
+Admin.Job, Admin.Job.JobTitles
+Admin.Job.PayGrades
+Admin.Job.EmploymentStatus
+Admin.Job.JobCategories
+Admin.Job.WorkShifts, org.testng.TestRunner@11df6cc9<br/>
+<a href="#Output-73208019" onClick='toggleBox("Output-73208019", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-73208019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-73208019">
+Links to Hover:<br/>
+Admin
+Admin.Job<br/>
+Links to validate:<br/>
+Admin.Job.JobTitles
+Admin.Job.PayGrades
+Admin.Job.EmploymentStatus
+Admin.Job.JobCategories
+Admin.Job.WorkShifts<br/>
+Checking if all links are invisible<br/>
+.........COMPLETED<br/>
+Checking if all links are Visible<br/>
+.........COMPLETED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.LinkValidation@4de5031f</td></tr>
+<tr>
+<td title='RegressionTest.LinkValidation.menuValidation()'><b>menuValidation</b><br>Test class: RegressionTest.LinkValidation<br>Parameters: Admin
+Admin.Qualification, Admin.Qualification.Skills
+Admin.Qualification.Education
+Admin.Qualification.Licenses
+Admin.Qualification.Languages, org.testng.TestRunner@11df6cc9<br/>
+<a href="#Output-509520245" onClick='toggleBox("Output-509520245", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-509520245" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-509520245">
+Links to Hover:<br/>
+Admin
+Admin.Qualification<br/>
+Links to validate:<br/>
+Admin.Qualification.Skills
+Admin.Qualification.Education
+Admin.Qualification.Licenses
+Admin.Qualification.Languages<br/>
+Checking if all links are invisible<br/>
+.........COMPLETED<br/>
+Checking if all links are Visible<br/>
+.........COMPLETED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.LinkValidation@4de5031f</td></tr>
+<tr>
+<td title='RegressionTest.LinkValidation.menuValidation()'><b>menuValidation</b><br>Test class: RegressionTest.LinkValidation<br>Parameters: Admin
+Admin.EmailNotifications, Admin.EmailNotifications.Configuration
+Admin.EmailNotifications.Subscribe, org.testng.TestRunner@11df6cc9<br/>
+<a href="#Output-1248282317" onClick='toggleBox("Output-1248282317", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1248282317" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1248282317">
+Links to Hover:<br/>
+Admin
+Admin.EmailNotifications<br/>
+Links to validate:<br/>
+Admin.EmailNotifications.Configuration
+Admin.EmailNotifications.Subscribe<br/>
+Checking if all links are invisible<br/>
+.........COMPLETED<br/>
+Checking if all links are Visible<br/>
+.........COMPLETED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.LinkValidation@4de5031f</td></tr>
+<tr>
+<td title='RegressionTest.LinkValidation.menuValidation()'><b>menuValidation</b><br>Test class: RegressionTest.LinkValidation<br>Parameters: Admin
+Admin.ProjectInfo, Admin.ProjectInfo.Customers
+Admin.ProjectInfo.Projects, org.testng.TestRunner@11df6cc9<br/>
+<a href="#Output-1337348229" onClick='toggleBox("Output-1337348229", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1337348229" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1337348229">
+Links to Hover:<br/>
+Admin
+Admin.ProjectInfo<br/>
+Links to validate:<br/>
+Admin.ProjectInfo.Customers
+Admin.ProjectInfo.Projects<br/>
+Checking if all links are invisible<br/>
+.........COMPLETED<br/>
+Checking if all links are Visible<br/>
+.........COMPLETED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.LinkValidation@4de5031f</td></tr>
+<tr>
+<td title='RegressionTest.LinkValidation.menuValidation()'><b>menuValidation</b><br>Test class: RegressionTest.LinkValidation<br>Parameters: Admin
+Admin.Configuration, Admin.Configuration.Localization
+Admin.Configuration.Modules, org.testng.TestRunner@11df6cc9<br/>
+<a href="#Output-595663400" onClick='toggleBox("Output-595663400", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-595663400" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-595663400">
+Links to Hover:<br/>
+Admin
+Admin.Configuration<br/>
+Links to validate:<br/>
+Admin.Configuration.Localization
+Admin.Configuration.Modules<br/>
+Checking if all links are invisible<br/>
+.........COMPLETED<br/>
+Checking if all links are Visible<br/>
+.........COMPLETED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.LinkValidation@4de5031f</td></tr>
+<tr>
+<td title='RegressionTest.LinkValidation.menuValidation()'><b>menuValidation</b><br>Test class: RegressionTest.LinkValidation<br>Parameters: PIM, PIM.Configuration
+PIM.EmployeeList
+PIM.AddEmployee
+PIM.Reports, org.testng.TestRunner@11df6cc9<br/>
+<a href="#Output-1224673836" onClick='toggleBox("Output-1224673836", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1224673836" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1224673836">
+Links to Hover:<br/>
+PIM<br/>
+Links to validate:<br/>
+PIM.Configuration
+PIM.EmployeeList
+PIM.AddEmployee
+PIM.Reports<br/>
+Checking if all links are invisible<br/>
+.........COMPLETED<br/>
+Checking if all links are Visible<br/>
+.........COMPLETED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.LinkValidation@4de5031f</td></tr>
+<tr>
+<td title='RegressionTest.LinkValidation.menuValidation()'><b>menuValidation</b><br>Test class: RegressionTest.LinkValidation<br>Parameters: PIM
+PIM.Configuration, PIM.Configuration.OptionalFields
+PIM.Configuration.CustomFields
+PIM.Configuration.DataImport
+PIM.Configuration.ReportingMethods
+PIM.Configuration.TerminationReasons, org.testng.TestRunner@11df6cc9<br/>
+<a href="#Output-954105040" onClick='toggleBox("Output-954105040", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-954105040" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-954105040">
+Links to Hover:<br/>
+PIM
+PIM.Configuration<br/>
+Links to validate:<br/>
+PIM.Configuration.OptionalFields
+PIM.Configuration.CustomFields
+PIM.Configuration.DataImport
+PIM.Configuration.ReportingMethods
+PIM.Configuration.TerminationReasons<br/>
+Checking if all links are invisible<br/>
+.........COMPLETED<br/>
+Checking if all links are Visible<br/>
+.........COMPLETED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>RegressionTest.LinkValidation@4de5031f</td></tr>
+</table><p>
+</body>
+</html>
