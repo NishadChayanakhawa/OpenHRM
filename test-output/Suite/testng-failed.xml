@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" parallel="none">
+  <parameter name="Username" value="opensourcecms"/>
+  <parameter name="URL" value="https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login"/>
+  <parameter name="Password" value="opensourcecms"/>
+  <test name="Test(failed)" parallel="none">
+    <parameter name="Username" value="opensourcecms"/>
+    <parameter name="URL" value="https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login"/>
+    <parameter name="Password" value="opensourcecms"/>
+    <groups>
+      <run>
+        <include name="HighPriority"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="RegressionTest.LinkValidation">
+        <methods>
+          <include name="logoutAndCloseBrowser"/>
+          <include name="login"/>
+          <include name="linkValidations" invocation-numbers="0 1"/>
+          <include name="loadBrowser"/>
+        </methods>
+      </class> <!-- RegressionTest.LinkValidation -->
+      <class name="RegressionTest.InvalidLoginTest">
+        <methods>
+          <include name="loadLoginPage"/>
+          <include name="closeBrowser"/>
+          <include name="loadBrowser"/>
+        </methods>
+      </class> <!-- RegressionTest.InvalidLoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
