@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Open HRM Regression Suite" parallel="classes" thread-count="2">
+	<test name="Test">
+		<groups>
+			<run>
+				<include name="HighPriority" />
+				<include name="MediumPriority" />
+				<include name="LowPriority" />
+			</run>
+		</groups>
+		<parameter name="URL"
+			value="https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login" />
+		<parameter name="Username" value="opensourcecms" />
+		<parameter name="Password" value="opensourcecms" />
+		<classes>
+			<class name="RegressionTest.InvalidLoginTest" />
+			<class name="RegressionTest.LinkValidation" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
